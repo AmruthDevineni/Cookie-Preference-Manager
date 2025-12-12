@@ -1,0 +1,52 @@
+{
+    "domain": "theguardian.com",
+    "last_updated": "2025-11-07",
+    "version": "1.0",
+    "contact": "privacy@theguardian.com",
+    "cookies": [
+      {
+        "name": "GU_U",
+        "category": "essential",
+        "purpose": "Guardian user authentication and preferences",
+        "vendor": "Guardian News & Media",
+        "vendor_privacy_policy": "https://www.theguardian.com/privacy",
+        "expiry": "1 year",
+        "essential": true,
+        "cross_site": false,
+        "data_collected": ["user ID", "login state"]
+      },
+      {
+        "name": "_ga",
+        "category": "analytics",
+        "purpose": "Google Analytics - visitor tracking",
+        "vendor": "Google LLC",
+        "vendor_privacy_policy": "https://policies.google.com/privacy",
+        "expiry": "2 years",
+        "essential": false,
+        "cross_site": false,
+        "data_collected": ["page views", "sessions"]
+      },
+      {
+        "name": "gu-cmpConsentedVendors",
+        "category": "essential",
+        "purpose": "Stores user's vendor consent choices",
+        "vendor": "Guardian News & Media",
+        "vendor_privacy_policy": "https://www.theguardian.com/privacy",
+        "expiry": "1 year",
+        "essential": true,
+        "cross_site": false,
+        "data_collected": ["consent preferences"]
+      },
+      {
+        "name": "permutive-id",
+        "category": "advertising",
+        "purpose": "Permutive audience segmentation for targeted content",
+        "vendor": "Permutive Inc.",
+        "vendor_privacy_policy": "https://permutive.com/privacy/",
+        "expiry": "1 year",
+        "essential": false,
+        "cross_site": true,
+        "data_collected": ["audience segments", "interests"]
+      }
+    ]
+  }

@@ -1,0 +1,63 @@
+{
+    "domain": "amazon.com",
+    "last_updated": "2025-11-07",
+    "version": "1.0",
+    "contact": "privacy@amazon.com",
+    "cookies": [
+      {
+        "name": "session-id",
+        "category": "essential",
+        "purpose": "Maintains shopping session and cart across pages",
+        "vendor": "Amazon.com Inc.",
+        "vendor_privacy_policy": "https://www.amazon.com/privacy",
+        "expiry": "session",
+        "essential": true,
+        "cross_site": false,
+        "data_collected": ["cart items", "session state"]
+      },
+      {
+        "name": "ubid-main",
+        "category": "essential",
+        "purpose": "Unique browser identifier for cart and preferences",
+        "vendor": "Amazon.com Inc.",
+        "vendor_privacy_policy": "https://www.amazon.com/privacy",
+        "expiry": "1 year",
+        "essential": true,
+        "cross_site": false,
+        "data_collected": ["browser ID"]
+      },
+      {
+        "name": "session-token",
+        "category": "essential",
+        "purpose": "Secure session authentication token",
+        "vendor": "Amazon.com Inc.",
+        "vendor_privacy_policy": "https://www.amazon.com/privacy",
+        "expiry": "session",
+        "essential": true,
+        "cross_site": false,
+        "data_collected": ["authentication state"]
+      },
+      {
+        "name": "csm-hit",
+        "category": "analytics",
+        "purpose": "Amazon Client Side Monitoring - performance metrics",
+        "vendor": "Amazon.com Inc.",
+        "vendor_privacy_policy": "https://www.amazon.com/privacy",
+        "expiry": "session",
+        "essential": false,
+        "cross_site": false,
+        "data_collected": ["page load times", "latency metrics"]
+      },
+      {
+        "name": "ad-id",
+        "category": "advertising",
+        "purpose": "Amazon advertising - tracks ad impressions and clicks",
+        "vendor": "Amazon.com Inc.",
+        "vendor_privacy_policy": "https://www.amazon.com/privacy",
+        "expiry": "1 year",
+        "essential": false,
+        "cross_site": true,
+        "data_collected": ["ad interactions", "product views"]
+      }
+    ]
+  }

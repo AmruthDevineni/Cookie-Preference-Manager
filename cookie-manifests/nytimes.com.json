@@ -1,0 +1,52 @@
+{
+    "domain": "nytimes.com",
+    "last_updated": "2025-11-07",
+    "version": "1.0",
+    "contact": "privacy@nytimes.com",
+    "cookies": [
+      {
+        "name": "nyt-a",
+        "category": "essential",
+        "purpose": "New York Times authentication and subscription status",
+        "vendor": "The New York Times Company",
+        "vendor_privacy_policy": "https://www.nytimes.com/privacy",
+        "expiry": "session",
+        "essential": true,
+        "cross_site": false,
+        "data_collected": ["login state", "subscription tier"]
+      },
+      {
+        "name": "nyt-purr",
+        "category": "analytics",
+        "purpose": "NYT Analytics - measures article engagement",
+        "vendor": "The New York Times Company",
+        "vendor_privacy_policy": "https://www.nytimes.com/privacy",
+        "expiry": "1 year",
+        "essential": false,
+        "cross_site": false,
+        "data_collected": ["articles read", "time spent", "scroll depth"]
+      },
+      {
+        "name": "_ga",
+        "category": "analytics",
+        "purpose": "Google Analytics - tracks visitor behavior",
+        "vendor": "Google LLC",
+        "vendor_privacy_policy": "https://policies.google.com/privacy",
+        "expiry": "2 years",
+        "essential": false,
+        "cross_site": false,
+        "data_collected": ["page views", "user sessions"]
+      },
+      {
+        "name": "nyt-gdpr",
+        "category": "essential",
+        "purpose": "Stores GDPR consent preferences for EU users",
+        "vendor": "The New York Times Company",
+        "vendor_privacy_policy": "https://www.nytimes.com/privacy",
+        "expiry": "1 year",
+        "essential": true,
+        "cross_site": false,
+        "data_collected": ["consent choices"]
+      }
+    ]
+  }

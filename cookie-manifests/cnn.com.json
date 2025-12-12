@@ -1,0 +1,63 @@
+{
+    "domain": "cnn.com",
+    "last_updated": "2025-11-07",
+    "version": "1.0",
+    "contact": "privacy@cnn.com",
+    "cookies": [
+      {
+        "name": "countryCode",
+        "category": "essential",
+        "purpose": "Determines regional content and compliance requirements",
+        "vendor": "CNN",
+        "vendor_privacy_policy": "https://www.cnn.com/privacy",
+        "expiry": "session",
+        "essential": true,
+        "cross_site": false,
+        "data_collected": ["geographic location"]
+      },
+      {
+        "name": "_chartbeat2",
+        "category": "analytics",
+        "purpose": "Chartbeat real-time analytics for editorial decisions",
+        "vendor": "Chartbeat Inc.",
+        "vendor_privacy_policy": "https://chartbeat.com/privacy/",
+        "expiry": "1 year",
+        "essential": false,
+        "cross_site": false,
+        "data_collected": ["real-time page views", "engagement metrics"]
+      },
+      {
+        "name": "_cb",
+        "category": "analytics",
+        "purpose": "Chartbeat user identifier",
+        "vendor": "Chartbeat Inc.",
+        "vendor_privacy_policy": "https://chartbeat.com/privacy/",
+        "expiry": "1 year",
+        "essential": false,
+        "cross_site": false,
+        "data_collected": ["unique visitor ID"]
+      },
+      {
+        "name": "_parsely_session",
+        "category": "analytics",
+        "purpose": "Parse.ly analytics for content performance",
+        "vendor": "Parse.ly (Automattic)",
+        "vendor_privacy_policy": "https://www.parse.ly/privacy-policy/",
+        "expiry": "session",
+        "essential": false,
+        "cross_site": false,
+        "data_collected": ["session behavior", "article engagement"]
+      },
+      {
+        "name": "_parsely_visitor",
+        "category": "analytics",
+        "purpose": "Parse.ly persistent visitor tracking",
+        "vendor": "Parse.ly (Automattic)",
+        "vendor_privacy_policy": "https://www.parse.ly/privacy-policy/",
+        "expiry": "13 months",
+        "essential": false,
+        "cross_site": false,
+        "data_collected": ["visitor ID", "content preferences"]
+      }
+    ]
+  }

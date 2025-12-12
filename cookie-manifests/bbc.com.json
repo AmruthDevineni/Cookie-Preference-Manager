@@ -1,0 +1,63 @@
+{
+    "domain": "bbc.com",
+    "last_updated": "2025-11-07",
+    "version": "1.0",
+    "contact": "privacy@bbc.co.uk",
+    "cookies": [
+      {
+        "name": "ckns_policy",
+        "category": "essential",
+        "purpose": "Stores user's cookie consent preferences",
+        "vendor": "BBC",
+        "vendor_privacy_policy": "https://www.bbc.co.uk/privacy",
+        "expiry": "1 year",
+        "essential": true,
+        "cross_site": false,
+        "data_collected": ["consent choices"]
+      },
+      {
+        "name": "ckns_explicit",
+        "category": "essential",
+        "purpose": "Records that user explicitly interacted with cookie banner",
+        "vendor": "BBC",
+        "vendor_privacy_policy": "https://www.bbc.co.uk/privacy",
+        "expiry": "1 year",
+        "essential": true,
+        "cross_site": false,
+        "data_collected": ["consent timestamp"]
+      },
+      {
+        "name": "_ga",
+        "category": "analytics",
+        "purpose": "Google Analytics - tracks visitor behavior",
+        "vendor": "Google LLC",
+        "vendor_privacy_policy": "https://policies.google.com/privacy",
+        "expiry": "2 years",
+        "essential": false,
+        "cross_site": false,
+        "data_collected": ["page views", "user sessions"]
+      },
+      {
+        "name": "s1",
+        "category": "analytics",
+        "purpose": "BBC's analytics for content performance measurement",
+        "vendor": "BBC",
+        "vendor_privacy_policy": "https://www.bbc.co.uk/privacy",
+        "expiry": "session",
+        "essential": false,
+        "cross_site": false,
+        "data_collected": ["article views", "video plays", "engagement"]
+      },
+      {
+        "name": "ckns_sa",
+        "category": "analytics",
+        "purpose": "BBC statistics and analytics consent flag",
+        "vendor": "BBC",
+        "vendor_privacy_policy": "https://www.bbc.co.uk/privacy",
+        "expiry": "1 year",
+        "essential": false,
+        "cross_site": false,
+        "data_collected": ["analytics consent status"]
+      }
+    ]
+  }
