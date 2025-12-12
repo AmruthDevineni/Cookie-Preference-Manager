@@ -2,7 +2,7 @@
 
 A powerful Chrome extension that automatically manages cookie consent banners and intelligently classifies and deletes tracking cookies based on your preferences. Features AI-enhanced classification using Groq's Llama 3.1 model and supports the emerging Cookie JSON manifest standard.
 
-## 🎯 Features
+## Features
 
 ### Automatic Cookie Consent Management
 - **Smart Banner Detection**: Automatically detects and handles cookie consent banners across websites
@@ -49,7 +49,7 @@ The extension uses a multi-layered classification system for maximum accuracy:
 - **Banner Counter**: See how many consent banners were handled today/lifetime
 - **Settings Page**: Comprehensive options and activity log viewer
 
-## 📦 Installation
+## Installation
 
 ### From Source
 
@@ -69,7 +69,7 @@ The extension uses a multi-layered classification system for maximum accuracy:
 3. Enable/disable AI classification (requires Groq API key)
 4. Toggle Safe Mode (detect only, don't auto-click)
 
-## ⚙️ Configuration
+## Configuration
 
 ### Groq API Setup (Optional - for AI Classification)
 
@@ -92,7 +92,7 @@ The extension uses a multi-layered classification system for maximum accuracy:
 - **Advertising Cookies**: Allow or block advertising/targeting cookies
 - **Personalization Cookies**: Allow or block personalization cookies
 
-## 🏗️ Architecture
+## Architecture
 
 ### Files Structure
 
@@ -147,7 +147,7 @@ Cookie Detected
 5. Queue for User Review
 ```
 
-## 🔍 Cookie JSON Manifest Support
+## Cookie JSON Manifest Support
 
 This extension supports the emerging [Cookie JSON](https://github.com/cookie-json/cookie-json) standard, which allows websites to declare their cookies in a standardized format.
 
@@ -176,14 +176,14 @@ This extension supports the emerging [Cookie JSON](https://github.com/cookie-jso
 }
 ```
 
-## 📊 Statistics & Logging
+## Statistics & Logging
 
 - **Banner Counter**: Tracks consent banners handled (daily + lifetime)
 - **Activity Logs**: Detailed logs of all extension actions
 - **Review Queue**: Cookies needing manual review (low AI confidence)
 - **Export Options**: Export logs as JSON or CSV
 
-## 🛡️ Privacy & Security
+## Privacy & Security
 
 - **Local Processing**: Cookie classification happens locally when possible
 - **No Data Collection**: Extension doesn't collect or transmit your browsing data
@@ -191,14 +191,14 @@ This extension supports the emerging [Cookie JSON](https://github.com/cookie-jso
 - **Essential Cookie Protection**: Never deletes essential cookies (login, cart, security)
 - **Safe Defaults**: Unknown cookies are kept by default (not deleted)
 
-## 🚀 Performance
+## Performance
 
 - **Fast Classification**: Pattern matching is instant
 - **Efficient AI**: Groq API provides ~500 tokens/second
 - **Minimal Overhead**: Lightweight content script
 - **Smart Cooldowns**: Prevents repeated actions on same site
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Extension Not Working
 
@@ -221,7 +221,7 @@ This extension supports the emerging [Cookie JSON](https://github.com/cookie-jso
 3. Review console logs for API errors
 4. Extension works fine without AI (uses patterns instead)
 
-## 📝 Development
+## Development
 
 ### Building from Source
 
