@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Logs - Cookie Preference Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="options-container">
+    <div class="options-header">
+      <h1>🍪 Cookie Preference Manager</h1>
+      <p>Activity Logs & Cookie JSON Demonstration</p>
+    </div>
+
+    <!-- Existing Activity Logs Section -->
+    <div class="logs-section">
+      <div class="logs-header">
+        <h2>Recent Activity</h2>
+        <div class="logs-actions">
+          <button id="exportJSON" class="btn btn-secondary btn-small">Export JSON</button>
+          <button id="exportCSV" class="btn btn-secondary btn-small">Export CSV</button>
+          <button id="clearLogs" class="btn btn-secondary btn-small">Clear All</button>
+        </div>
+      </div>
+
+      <div class="logs-controls">
+        <div class="logs-stats">
+          <span id="totalLogs">0 total logs</span>
+          <span class="separator">•</span>
+          <span id="pageInfo">Page 1 of 1</span>
+        </div>
+        <div class="mode-filter">
+          <button id="filterAll" class="filter-btn active">All Logs</button>
+          <button id="filterNormal" class="filter-btn">Normal Mode</button>
+          <button id="filterIncognito" class="filter-btn">Incognito Mode</button>
+        </div>
+      </div>
+
+      <div class="logs-table-container">
+        <table id="logsTable">
+          <thead>
+            <tr>
+              <th>Timestamp</th>
+              <th>Site</th>
+              <th>Action</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody id="logsTableBody">
+            <!-- Logs will be inserted here -->
+          </tbody>
+        </table>
+
+        <div id="emptyState" class="empty-state" style="display: none;">
+          <div class="empty-state-icon">📋</div>
+          <p>No activity logged yet</p>
+          <p style="font-size: 12px; margin-top: 8px;">The extension will log actions as you browse</p>
+        </div>
+      </div>
+
+      <div id="paginationControls" class="pagination" style="display: none;">
+        <button id="firstPage" class="page-btn">⏮️ First</button>
+        <button id="prevPage" class="page-btn">◀️ Previous</button>
+        
+        <div class="page-numbers" id="pageNumbers">
+          <!-- Page numbers inserted here -->
+        </div>
+        
+        <button id="nextPage" class="page-btn">Next ▶️</button>
+        <button id="lastPage" class="page-btn">Last ⏭️</button>
+        
+        <select id="itemsPerPage" class="items-per-page">
+          <option value="10">10 per page</option>
+          <option value="25" selected>25 per page</option>
+          <option value="50">50 per page</option>
+          <option value="100">100 per page</option>
+          <option value="all">Show All</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

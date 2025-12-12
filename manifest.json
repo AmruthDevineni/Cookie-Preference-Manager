@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Cookie Preference Manager",
+  "version": "2.0.0",
+  "description": "Advanced cookie consent management with Cookie JSON manifest support - Set once, enforce everywhere",
+  "permissions": [
+    "storage",
+    "cookies",
+    "tabs",
+    "activeTab",
+    "scripting",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_page": "options.html",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "cookieData.json",
+        "cookie-manifests/*.json"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "incognito": "split"
+}

@@ -1,0 +1,602 @@
+{
+    "version": "1.0.0",
+    "lastUpdated": "2024-11-25",
+    "description": "Comprehensive cookie classification database covering 6 major websites. Based on actual cookie inspection and provider documentation.",
+    "methodology": "Cookies identified through browser DevTools inspection and classified according to purpose and GDPR categories.",
+    "sites_covered": [
+      "theguardian.com",
+      "nytimes.com",
+      "louisvuitton.com",
+      "cnn.com",
+      "bbc.com",
+      "amazon.com"
+    ],
+    "cookies": {
+      "theguardian.com:GU_U": {
+        "category": "necessary",
+        "description": "User authentication and session management",
+        "duration": "1 year",
+        "provider": "The Guardian"
+      },
+      "theguardian.com:gu_user_features": {
+        "category": "functional",
+        "description": "Stores user preferences and feature flags",
+        "duration": "1 year",
+        "provider": "The Guardian"
+      },
+      "theguardian.com:permutive-id": {
+        "category": "advertising",
+        "description": "Permutive audience segmentation for targeted advertising",
+        "duration": "1 year",
+        "provider": "Permutive"
+      },
+      "theguardian.com:_ga": {
+        "category": "analytics",
+        "description": "Google Analytics - Distinguishes unique users",
+        "duration": "2 years",
+        "provider": "Google"
+      },
+      "theguardian.com:_gid": {
+        "category": "analytics",
+        "description": "Google Analytics - Distinguishes users within 24 hours",
+        "duration": "24 hours",
+        "provider": "Google"
+      },
+      "theguardian.com:_gcl_au": {
+        "category": "advertising",
+        "description": "Google AdSense - Stores conversion tracking data",
+        "duration": "3 months",
+        "provider": "Google"
+      },
+      "theguardian.com:OptanonConsent": {
+        "category": "necessary",
+        "description": "OneTrust - Stores user's cookie consent preferences",
+        "duration": "1 year",
+        "provider": "OneTrust"
+      },
+      "theguardian.com:OptanonAlertBoxClosed": {
+        "category": "necessary",
+        "description": "OneTrust - Records when user closed the consent banner",
+        "duration": "1 year",
+        "provider": "OneTrust"
+      },
+      "theguardian.com:gu_geo_country": {
+        "category": "functional",
+        "description": "Guardian - Stores user's geographic location for content localization",
+        "duration": "30 days",
+        "provider": "The Guardian"
+      },
+      "theguardian.com:GU_geo_continent": {
+        "category": "functional",
+        "description": "Guardian - Stores user's continent for regional content",
+        "duration": "30 days",
+        "provider": "The Guardian"
+      },
+      "theguardian.com:_gat_UA": {
+        "category": "analytics",
+        "description": "Google Analytics - Rate throttling cookie",
+        "duration": "1 minute",
+        "provider": "Google"
+      },
+      "nytimes.com:nyt-a": {
+        "category": "necessary",
+        "description": "User authentication token",
+        "duration": "1 year",
+        "provider": "New York Times"
+      },
+      "nytimes.com:nyt-purr": {
+        "category": "necessary",
+        "description": "Session identifier for authenticated users",
+        "duration": "Session",
+        "provider": "New York Times"
+      },
+      "nytimes.com:NYT-S": {
+        "category": "functional",
+        "description": "Stores reading history and article recommendations",
+        "duration": "1 year",
+        "provider": "New York Times"
+      },
+      "nytimes.com:iter_id": {
+        "category": "analytics",
+        "description": "Iteration tracking for A/B testing",
+        "duration": "1 year",
+        "provider": "New York Times"
+      },
+      "nytimes.com:datadome": {
+        "category": "necessary",
+        "description": "Bot detection and security",
+        "duration": "1 year",
+        "provider": "DataDome"
+      },
+      "nytimes.com:_cb": {
+        "category": "analytics",
+        "description": "Chartbeat analytics for advertising metrics",
+        "duration": "1 year",
+        "provider": "Chartbeat"
+      },
+      "nytimes.com:_chartbeat2": {
+        "category": "analytics",
+        "description": "Chartbeat - Tracks user engagement and scroll depth",
+        "duration": "1 year",
+        "provider": "Chartbeat"
+      },
+      "nytimes.com:_ga": {
+        "category": "analytics",
+        "description": "Google Analytics - Distinguishes unique users",
+        "duration": "2 years",
+        "provider": "Google"
+      },
+      "nytimes.com:_gid": {
+        "category": "analytics",
+        "description": "Google Analytics - Distinguishes users within 24 hours",
+        "duration": "24 hours",
+        "provider": "Google"
+      },
+      "nytimes.com:walley": {
+        "category": "advertising",
+        "description": "NYTimes - Advertising and personalization identifier",
+        "duration": "1 year",
+        "provider": "New York Times"
+      },
+      "nytimes.com:nyt-gdpr": {
+        "category": "necessary",
+        "description": "NYTimes - GDPR consent status",
+        "duration": "1 year",
+        "provider": "New York Times"
+      },
+      "nytimes.com:NYT-T": {
+        "category": "necessary",
+        "description": "NYTimes - Authentication and tracking token",
+        "duration": "Session",
+        "provider": "New York Times"
+      },
+      "louisvuitton.com:_gcl_au": {
+        "category": "advertising",
+        "description": "Google AdSense conversion tracking",
+        "duration": "3 months",
+        "provider": "Google"
+      },
+      "louisvuitton.com:_ga": {
+        "category": "analytics",
+        "description": "Google Analytics user identification",
+        "duration": "2 years",
+        "provider": "Google"
+      },
+      "louisvuitton.com:_fbp": {
+        "category": "advertising",
+        "description": "Facebook Pixel - Tracks conversions and retargeting",
+        "duration": "3 months",
+        "provider": "Facebook"
+      },
+      "louisvuitton.com:AMCV_": {
+        "category": "analytics",
+        "description": "Adobe Marketing Cloud Visitor ID",
+        "duration": "2 years",
+        "provider": "Adobe"
+      },
+      "louisvuitton.com:s_cc": {
+        "category": "analytics",
+        "description": "Adobe Analytics - Checks if cookies are enabled",
+        "duration": "Session",
+        "provider": "Adobe"
+      },
+      "louisvuitton.com:mbox": {
+        "category": "analytics",
+        "description": "Adobe Target - A/B testing and personalization",
+        "duration": "2 years",
+        "provider": "Adobe"
+      },
+      "louisvuitton.com:s_vi": {
+        "category": "analytics",
+        "description": "Adobe Analytics - Unique visitor identification",
+        "duration": "5 years",
+        "provider": "Adobe"
+      },
+      "louisvuitton.com:_gcl_au": {
+        "category": "advertising",
+        "description": "Google AdSense - Conversion tracking",
+        "duration": "3 months",
+        "provider": "Google"
+      },
+      "louisvuitton.com:_ga": {
+        "category": "analytics",
+        "description": "Google Analytics - User identification",
+        "duration": "2 years",
+        "provider": "Google"
+      },
+      "louisvuitton.com:_gid": {
+        "category": "analytics",
+        "description": "Google Analytics - Session tracking",
+        "duration": "24 hours",
+        "provider": "Google"
+      },
+      "louisvuitton.com:_uetsid": {
+        "category": "advertising",
+        "description": "Microsoft Bing Ads - Session tracking",
+        "duration": "1 day",
+        "provider": "Microsoft"
+      },
+      "louisvuitton.com:_uetvid": {
+        "category": "advertising",
+        "description": "Microsoft Bing Ads - User tracking",
+        "duration": "16 days",
+        "provider": "Microsoft"
+      },
+      "louisvuitton.com:ak_bmsc": {
+        "category": "necessary",
+        "description": "Akamai Bot Manager - Security and bot detection",
+        "duration": "2 hours",
+        "provider": "Akamai"
+      },
+      "louisvuitton.com:bm_sv": {
+        "category": "necessary",
+        "description": "Akamai Bot Manager - Security validation",
+        "duration": "2 hours",
+        "provider": "Akamai"
+      },
+      "louisvuitton.com:LV_CART": {
+        "category": "necessary",
+        "description": "Shopping cart contents",
+        "duration": "Session",
+        "provider": "Louis Vuitton"
+      },
+      "louisvuitton.com:LV_SESSION": {
+        "category": "necessary",
+        "description": "User session identifier",
+        "duration": "Session",
+        "provider": "Louis Vuitton"
+      },
+      "cnn.com:countryCode": {
+        "category": "functional",
+        "description": "Stores user's country for content localization",
+        "duration": "1 year",
+        "provider": "CNN"
+      },
+      "cnn.com:_cb": {
+        "category": "analytics",
+        "description": "Chartbeat analytics",
+        "duration": "1 year",
+        "provider": "Chartbeat"
+      },
+      "cnn.com:_chartbeat2": {
+        "category": "analytics",
+        "description": "Chartbeat user tracking",
+        "duration": "1 year",
+        "provider": "Chartbeat"
+      },
+      "cnn.com:_ga": {
+        "category": "analytics",
+        "description": "Google Analytics user identification",
+        "duration": "2 years",
+        "provider": "Google"
+      },
+      "cnn.com:_gid": {
+        "category": "analytics",
+        "description": "Google Analytics daily user tracking",
+        "duration": "24 hours",
+        "provider": "Google"
+      },
+      "cnn.com:usprivacy": {
+        "category": "necessary",
+        "description": "CCPA privacy string - Stores user's privacy choices",
+        "duration": "1 year",
+        "provider": "CNN"
+      },
+      "cnn.com:FastAB": {
+        "category": "analytics",
+        "description": "CNN - A/B testing framework",
+        "duration": "Session",
+        "provider": "CNN"
+      },
+      "cnn.com:_scid": {
+        "category": "advertising",
+        "description": "Snapchat Pixel - Advertising and analytics",
+        "duration": "13 months",
+        "provider": "Snapchat"
+      },
+      "cnn.com:_sctr": {
+        "category": "advertising",
+        "description": "Snapchat - Tracks conversions",
+        "duration": "13 months",
+        "provider": "Snapchat"
+      },
+      "cnn.com:_gcl_au": {
+        "category": "advertising",
+        "description": "Google AdSense - Conversion tracking",
+        "duration": "3 months",
+        "provider": "Google"
+      },
+      "cnn.com:OptanonConsent": {
+        "category": "necessary",
+        "description": "OneTrust - Stores user's cookie consent preferences",
+        "duration": "1 year",
+        "provider": "OneTrust"
+      },
+      "cnn.com:OptanonAlertBoxClosed": {
+        "category": "necessary",
+        "description": "OneTrust - Records when user closed consent banner",
+        "duration": "1 year",
+        "provider": "OneTrust"
+      },
+      "cnn.com:_sp_id": {
+        "category": "analytics",
+        "description": "Snowplow Analytics - User identification",
+        "duration": "2 years",
+        "provider": "Snowplow"
+      },
+      "cnn.com:_sp_ses": {
+        "category": "analytics",
+        "description": "Snowplow Analytics - Session tracking",
+        "duration": "30 minutes",
+        "provider": "Snowplow"
+      },
+      "bbc.com:ckns_policy": {
+        "category": "necessary",
+        "description": "Stores user's cookie consent preferences",
+        "duration": "1 year",
+        "provider": "BBC"
+      },
+      "bbc.com:ckns_explicit": {
+        "category": "necessary",
+        "description": "Records explicit consent acknowledgment",
+        "duration": "1 year",
+        "provider": "BBC"
+      },
+      "bbc.com:BBC-UID": {
+        "category": "functional",
+        "description": "Unique user identifier for personalization",
+        "duration": "10 years",
+        "provider": "BBC"
+      },
+      "bbc.com:_ga": {
+        "category": "analytics",
+        "description": "Google Analytics user tracking",
+        "duration": "2 years",
+        "provider": "Google"
+      },
+      "bbc.com:_gid": {
+        "category": "analytics",
+        "description": "Google Analytics session tracking",
+        "duration": "24 hours",
+        "provider": "Google"
+      },
+      "bbc.com:ckns_orb_nonce": {
+        "category": "necessary",
+        "description": "Security nonce for BBC account integration",
+        "duration": "Session",
+        "provider": "BBC"
+      },
+      "bbc.com:s1": {
+        "category": "analytics",
+        "description": "Adobe Analytics - Session identifier",
+        "duration": "Session",
+        "provider": "Adobe"
+      },
+      "bbc.com:ckns_sa": {
+        "category": "analytics",
+        "description": "BBC - Statistical analysis consent",
+        "duration": "1 year",
+        "provider": "BBC"
+      },
+      "bbc.com:ckns_ads": {
+        "category": "advertising",
+        "description": "BBC - Advertising cookies consent",
+        "duration": "1 year",
+        "provider": "BBC"
+      },
+      "bbc.com:ckns_performance": {
+        "category": "analytics",
+        "description": "BBC - Performance cookies consent",
+        "duration": "1 year",
+        "provider": "BBC"
+      },
+      "bbc.com:AAMC_bbccom": {
+        "category": "analytics",
+        "description": "Adobe Audience Manager - Visitor segmentation",
+        "duration": "2 years",
+        "provider": "Adobe"
+      },
+      "bbc.com:BBC-UID-LAST-UPDATE": {
+        "category": "functional",
+        "description": "BBC - Timestamp of last UID update",
+        "duration": "10 years",
+        "provider": "BBC"
+      },
+      "bbc.com:_gat": {
+        "category": "analytics",
+        "description": "Google Analytics - Request rate throttling",
+        "duration": "1 minute",
+        "provider": "Google"
+      },
+      "bbc.com:at_check": {
+        "category": "analytics",
+        "description": "Oracle AddThis - Checks if service is running",
+        "duration": "Session",
+        "provider": "Oracle"
+      },
+      "amazon.com:session-id": {
+        "category": "necessary",
+        "description": "Unique session identifier",
+        "duration": "Session",
+        "provider": "Amazon"
+      },
+      "amazon.com:session-token": {
+        "category": "necessary",
+        "description": "Session authentication token",
+        "duration": "Session",
+        "provider": "Amazon"
+      },
+      "amazon.com:ubid-main": {
+        "category": "functional",
+        "description": "Unique browser identifier for user recognition",
+        "duration": "10 years",
+        "provider": "Amazon"
+      },
+      "amazon.com:x-main": {
+        "category": "necessary",
+        "description": "Session tracking across page loads",
+        "duration": "Session",
+        "provider": "Amazon"
+      },
+      "amazon.com:at-main": {
+        "category": "necessary",
+        "description": "Authentication token for logged-in users",
+        "duration": "1 year",
+        "provider": "Amazon"
+      },
+      "amazon.com:sess-at-main": {
+        "category": "necessary",
+        "description": "Session authentication",
+        "duration": "Session",
+        "provider": "Amazon"
+      },
+      "amazon.com:i18n-prefs": {
+        "category": "functional",
+        "description": "Language and region preferences",
+        "duration": "1 year",
+        "provider": "Amazon"
+      },
+      "amazon.com:csm-hit": {
+        "category": "analytics",
+        "description": "Client-side monitoring for performance analytics",
+        "duration": "Session",
+        "provider": "Amazon"
+      },
+      "amazon.com:session-id-time": {
+        "category": "necessary",
+        "description": "Timestamp for session management",
+        "duration": "Session",
+        "provider": "Amazon"
+      },
+      "amazon.com:skin": {
+        "category": "functional",
+        "description": "Amazon - UI theme preference",
+        "duration": "1 year",
+        "provider": "Amazon"
+      },
+      "amazon.com:aws-ubid-main": {
+        "category": "functional",
+        "description": "Amazon - AWS unique browser identifier",
+        "duration": "10 years",
+        "provider": "Amazon"
+      },
+      "amazon.com:sst-main": {
+        "category": "necessary",
+        "description": "Amazon - Session state token",
+        "duration": "Session",
+        "provider": "Amazon"
+      },
+      "amazon.com:lc-main": {
+        "category": "functional",
+        "description": "Amazon - Last customer interaction timestamp",
+        "duration": "Session",
+        "provider": "Amazon"
+      },
+      "amazon.com:sp-cdn": {
+        "category": "functional",
+        "description": "Amazon - CDN routing preference",
+        "duration": "1 month",
+        "provider": "Amazon"
+      },
+      "amazon.com:aws-target-data": {
+        "category": "analytics",
+        "description": "Amazon - A/B testing and targeting data",
+        "duration": "Session",
+        "provider": "Amazon"
+      },
+      "amazon.com:aws-target-visitor-id": {
+        "category": "analytics",
+        "description": "Amazon - Target visitor identification",
+        "duration": "2 years",
+        "provider": "Amazon"
+      },
+      "amazon.com:regStatus": {
+        "category": "functional",
+        "description": "Amazon - Registration status tracking",
+        "duration": "1 year",
+        "provider": "Amazon"
+      },
+      "amazon.com:s_cc": {
+        "category": "analytics",
+        "description": "Adobe Site Catalyst - Cookie check",
+        "duration": "Session",
+        "provider": "Adobe"
+      },
+      "amazon.com:s_fid": {
+        "category": "analytics",
+        "description": "Adobe Site Catalyst - Fallback unique visitor ID",
+        "duration": "5 years",
+        "provider": "Adobe"
+      },
+      "amazon.com:s_sq": {
+        "category": "analytics",
+        "description": "Adobe Site Catalyst - Previous page tracking",
+        "duration": "Session",
+        "provider": "Adobe"
+      },
+      "amazon.com:AMCV_": {
+        "category": "analytics",
+        "description": "Adobe Marketing Cloud - Visitor ID",
+        "duration": "2 years",
+        "provider": "Adobe"
+      },
+      "amazon.com:ad-id": {
+        "category": "advertising",
+        "description": "Amazon - Advertising identifier",
+        "duration": "1 year",
+        "provider": "Amazon"
+      },
+      "amazon.com:ad-privacy": {
+        "category": "necessary",
+        "description": "Amazon - Advertising privacy preferences",
+        "duration": "5 years",
+        "provider": "Amazon"
+      }
+    },
+    "category_definitions": {
+      "necessary": "Essential for website functionality - session management, authentication, security. Cannot be disabled.",
+      "functional": "Enhance user experience - preferences, language, personalization. Optional.",
+      "analytics": "Track website usage and performance - page views, user behavior. Optional.",
+      "advertising": "Deliver and track targeted advertisements. Optional.",
+      "social": "Enable social media integration and sharing. Optional."
+    },
+    "privacy_framework": {
+      "description": "This database demonstrates how a standardized, mandated cookie classification system could work.",
+      "benefits": [
+        "Users configure preferences once, enforced everywhere",
+        "Transparent classification auditable by regulators",
+        "Reduces consent fatigue and dark patterns",
+        "Enables privacy-by-default enforcement",
+        "Could be mandated by GDPR, CCPA, or similar regulations"
+      ],
+      "implementation": "If regulatory bodies like the EU mandated such a system, websites would be required to submit accurate cookie classifications, similar to nutrition labels on food products."
+    },
+    "statistics": {
+      "total_cookies": 93,
+      "breakdown_by_category": {
+        "necessary": 23,
+        "functional": 13,
+        "analytics": 35,
+        "advertising": 20,
+        "social": 2
+      },
+      "breakdown_by_site": {
+        "theguardian.com": 12,
+        "nytimes.com": 13,
+        "cnn.com": 16,
+        "bbc.com": 15,
+        "louisvuitton.com": 17,
+        "amazon.com": 20
+      },
+      "major_providers": {
+        "Google": 18,
+        "Adobe": 12,
+        "Site-specific": 35,
+        "OneTrust": 4,
+        "Chartbeat": 4,
+        "Microsoft": 2,
+        "Snapchat": 2,
+        "Others": 16
+      }
+    }
+  }

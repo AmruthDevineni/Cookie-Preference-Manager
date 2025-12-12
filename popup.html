@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Preference Manager</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ai-review.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header>
+      <h1>🍪 Cookie Manager</h1>
+      <p class="subtitle">AI-Enhanced Privacy Protection</p>
+    </header>
+
+    <!-- Tab Navigation -->
+    <div class="tabs">
+      <div class="tab active" data-tab="preferences">
+        ⚙️ Preferences
+      </div>
+      <div class="tab" data-tab="review" id="reviewTab">
+        🤔 Review
+        <span class="tab-badge" id="reviewBadge" style="display: none;">0</span>
+      </div>
+    </div>
+
+    <!-- PREFERENCES TAB -->
+    <div class="tab-content active" data-content="preferences">
+      <!-- Dual Stats -->
+      <div class="stats-dual">
+        <div class="stat-box">
+          <div class="stat-number" id="bannerCountToday">0</div>
+          <div class="stat-label">Today</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-box">
+          <div class="stat-number" id="bannerCountLifetime">0</div>
+          <div class="stat-label">All Time</div>
+        </div>
+      </div>
+
+      <div class="preferences">
+        <h2>Cookie Preferences</h2>
+        
+        <div class="pref-item">
+          <label class="toggle-container">
+            <span class="pref-label">
+              <span class="pref-title">Extension Enabled</span>
+              <span class="pref-desc">Turn the extension on or off</span>
+            </span>
+            <input type="checkbox" id="enabled">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <div class="pref-item">
+          <label class="toggle-container">
+            <span class="pref-label">
+              <span class="pref-title">🤖 AI Classification</span>
+              <span class="pref-desc">Use Llama 3.1 for unknown cookies</span>
+            </span>
+            <input type="checkbox" id="aiEnabled">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <div class="pref-item">
+          <label class="toggle-container">
+            <span class="pref-label">
+              <span class="pref-title">Safe Mode</span>
+              <span class="pref-desc">Detect only, don't auto-click banners</span>
+            </span>
+            <input type="checkbox" id="safeMode">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="section-note">
+          <strong>Essential cookies</strong> are always allowed (login, cart, security)
+        </p>
+
+        <div class="pref-item">
+          <label class="toggle-container">
+            <span class="pref-label">
+              <span class="pref-title">Analytics Cookies</span>
+              <span class="pref-desc">Google Analytics, visitor tracking</span>
+            </span>
+            <input type="checkbox" id="allowAnalytics">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <div class="pref-item">
+          <label class="toggle-container">
+            <span class="pref-label">
+              <span class="pref-title">Advertising Cookies</span>
+              <span class="pref-desc">Ad targeting, Facebook Pixel, Google Ads</span>
+            </span>
+            <input type="checkbox" id="allowAdvertising">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <div class="pref-item">
+          <label class="toggle-container">
+            <span class="pref-label">
+              <span class="pref-title">Personalization Cookies</span>
+              <span class="pref-desc">Language, theme, user preferences</span>
+            </span>
+            <input type="checkbox" id="allowPersonalization">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="resetCooldowns" class="btn btn-secondary">Reset Cooldowns</button>
+        <button id="viewLogs" class="btn btn-secondary">View Logs</button>
+        <button id="savePreferences" class="btn btn-primary">Save</button>
+      </div>
+
+      <div id="saveMessage" class="save-message"></div>
+    </div>
+
+    <!-- REVIEW TAB -->
+    <div class="tab-content" data-content="review">
+      <div class="review-header">
+        <h2>🤔 Cookies Need Your Review</h2>
+        <p class="review-subtitle">
+          AI couldn't classify these cookies with high confidence (&lt;80%). 
+          Review the AI analysis and decide whether to keep or delete each cookie.
+        </p>
+      </div>
+
+      <!-- AI Status Indicator -->
+      <div class="ai-status" id="aiStatus" style="display: none;">
+        <div class="ai-status-icon" id="aiStatusIcon">🔄</div>
+        <span id="aiStatusText">Checking AI status...</span>
+      </div>
+
+      <!-- AI Init Button (shown if AI not initialized) -->
+      <div id="aiInitSection" style="display: none;">
+        <div class="ai-init-info">
+          <p><strong>🤖 AI Classification Not Ready</strong></p>
+          <p style="font-size: 12px; margin-top: 4px;">
+            AI will be ready automatically when needed.
+          </p>
+        </div>
+      </div>
+
+      <!-- Review List -->
+      <div id="reviewList" class="review-list">
+        <!-- Dynamically populated -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="emptyReview" class="empty-review" style="display: none;">
+        <div class="empty-review-icon">✅</div>
+        <p style="font-weight: 600; margin-bottom: 4px;">All Clear!</p>
+        <p style="font-size: 12px;">No cookies need review</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
