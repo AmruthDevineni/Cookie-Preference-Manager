@@ -1,26 +1,3 @@
-/**
- * Cookie Preference Manager - Complete Content Script v2.2-FIXED
- * 
- * CRITICAL FIX v2.2:
- * - Monitoring loop now deletes ONLY detected trackers
- * - Prevents infinite cleanup cycles
- * - Works with background.js v2.2-FIXED
- * 
- * FEATURES:
- * ✅ Cookie JSON manifest support
- * ✅ 93-cookie database integration
- * ✅ 200+ enhanced pattern library (NEW!)
- * ✅ Third-party domain detection (NEW!)
- * ✅ JWT token detection (NEW!)
- * ✅ Multi-step dialog navigation
- * ✅ Platform-specific strategies (OneTrust, Cookiebot, etc.)
- * ✅ CSS-based banner hiding
- * ✅ Retry logic with exponential backoff
- * ✅ IAB TCF detection
- * ✅ Cookie naming convention support
- * ✅ Safety mechanisms (cooldowns, debouncing)
- */
-
 (function() {
   'use strict';
 
@@ -1977,5 +1954,6 @@
   } else {
     init();
   }
+
 
 })();
